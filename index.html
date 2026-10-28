@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Breach</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: 'Courier New', monospace;
+      font-size: 1.2rem;
+      padding: 20px;
+      animation: flicker 0.1s infinite alternate;
+    }
+    @keyframes flicker {
+      0% { opacity: 1; }
+      100% { opacity: 0.8; }
+    }
+    .warning {
+      color: red;
+      font-size: 2rem;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .center {
+      text-align: center;
+      margin-top: 20vh;
+    }
+    .terminal {
+      background-color: #111;
+      padding: 15px;
+      border: 2px solid lime;
+      margin-top: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .disclaimer {
+      margin-top: 40px;
+      text-align: center;
+      color: gray;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <div class="warning">!!! SYSTEM BREACH DETECTED !!!</div>
+    <div class="terminal">
+      <p>Accessing sensitive data...</p>
+      <p>Decrypting files...</p>
+      <p><span style="color: red;">[WARNING]</span> Firewall bypassed</p>
+      <p>Sending files to external server...</p>
+      <p><strong>IP Address:</strong> 192.168.0.1 traced</p>
+      <p><strong>Status:</strong> <span style="color: red;">COMPROMISED</span></p>
+    </div>
+    <div class="disclaimer">
+      ⚠️ This is a harmless fake page for fun. Nothing is actually being hacked.
+    </div>
+  </div>
+  <script>
+    setTimeout(() => {
+      alert("Your system has been compromised. This is not a joke.");
+    }, 3000);
+  </script>
+</body>
+</html>
